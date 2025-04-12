@@ -5,10 +5,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "5.94.1"
     }
-    random = {
-      source  = "hasicorp/random"
-      version = "~> 3.1.0"
-    }
+
     kubernetes = {
       source  = "hashicorp/kubernetes"
       version = ">=2.7.1"
@@ -24,6 +21,10 @@ terraform {
     cloudinit = {
       source  = "hashicorp/cloudinit"
       version = "~> 2.2.0"
+    }
+    random = {
+      source  = "hasicorp/random"
+      version = "~> 3.1.0"
     }
   }
 }
